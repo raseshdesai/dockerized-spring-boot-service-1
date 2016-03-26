@@ -1,0 +1,44 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Maven #
+target/
+
+# Gradle #
+.gradle
+build/
+
+# Eclipse Files #
+.classpath
+.project
+.settings/
+
+# Intellij Files #
+.idea/**
+*.iml
+**/LOG_HOME_IS_UNDEFINED/
+**/LOG_HOME_IS_UNDEFINED
+velocity.log*
+misc.xml
+ari-service-tests/test-output/
+ari-service-tests/velocity.log
+ari-service-tests/velocity.log.*
+
+#Mac Backup files
+.DS_Store
+
+#ari.sh log
+nohup.out
+ari.pid
+
+#test outputs
+test-output/**
+
+#ignore version backup file created by mvn versions:set
+*.versionsBackup
+
+--spring.output.ansi.enabled=always
