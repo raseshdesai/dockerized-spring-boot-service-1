@@ -11,7 +11,7 @@ public class SpringBootService1Application {
 
     @RequestMapping("/")
     public String greet() {
-        return "[Service 1]: 'Hello Java, Spring Boot & Docker - v3'";
+        return "[Service 1]: 'Hello Java, Spring Boot & Docker - v4'";
     }
 
     public static void main(String[] args) {
