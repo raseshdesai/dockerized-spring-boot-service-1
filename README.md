@@ -17,7 +17,7 @@ To run docker
 
 To build using docker spotify plugin (in the same terminal which is running docker successfully)
 
-    $ mvn package docker:build
+    $ docker build -t raseshdesai/spring-boot-service-1 .
 
 To run as a docker container following building your image    
     
@@ -40,8 +40,9 @@ Verifying
     
 Other useful commands
 
-    $ docker images
+    $ docker images (shows all downloaded/built images)
     $ docker ps (shows only running containers)
+    $ docker ps -a (shows all containers, even exited ones)
     $ docker logs <container-id> (container-id obtained from ps command, shows logs)
     $ docker top <container-id> (container-id obtained from ps command, shows processes running within this container)
     $ docker inspect <container-id> (container-id obtained from ps command, shows all container config as json)
@@ -57,4 +58,4 @@ To push to your docker hub
 Reference:
 
     https://spring.io/guides/gs/spring-boot-docker/
-    
+    https://hub.docker.com/_/maven/
