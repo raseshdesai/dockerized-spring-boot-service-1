@@ -23,6 +23,10 @@ To run as a docker container following building your image
     
     $ docker run -d -p 8085:8080 -t raseshdesai/spring-boot-service-1
     
+    OR
+    
+    $ docker run -i -p 8085:8080 -t raseshdesai/spring-boot-service-1
+    
     (-d: run as a daemon and you can use logs/top/inspect to look further, -t: allocate a pseudo terminal, -i: 
     interactive, which seems default)
 
@@ -55,9 +59,11 @@ To push to your docker hub
     $ docker login
     $ docker push raseshdesai/spring-boot-service-1
 
-Automated Docker Build (triggered on commit to this github repo)
+Automated Docker Build
     
     https://hub.docker.com/r/raseshdesai/dockerized-spring-boot-service-1/
+
+    (triggered on commit to this github repo, with which you might not even need to build locally, just pull once ready)
 
 Reference:
 
