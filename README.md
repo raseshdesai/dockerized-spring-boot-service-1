@@ -1,17 +1,17 @@
 Dockerized Spring Boot Service 1
 =================================
 
-To start the application without docker using IntelliJ
+To start the application using IntelliJ (without maven or docker)
 
     Run using IntelliJ
 
     http://localhost:8080
     
-To run application using Maven
+To run application using Maven (without docker)
 
     $ mvn package && java -jar target/spring-boot-service-1-0.0.1-SNAPSHOT.jar
 
-To run docker
+To start docker
 
     From Applications or Launch Pad -> Docker QuickStart Terminal
 
@@ -54,6 +54,10 @@ To push to your docker hub
 
     $ docker login
     $ docker push raseshdesai/spring-boot-service-1
+
+Automated Docker Build (triggered on commit to this github repo)
+    
+    https://hub.docker.com/r/raseshdesai/dockerized-spring-boot-service-1/
 
 Reference:
 
